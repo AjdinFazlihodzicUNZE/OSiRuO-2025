@@ -14,8 +14,9 @@ function Homescreen() {
             try {
                 setloading(true);
                 const response = await axios.get('/api/rooms/getallrooms');
+                console.log("API Response Data:", response.data);
                 const data = response.data;
-                setrooms(data);
+                setrooms(Array.isArray(response.data) ? response.data : []);
                 setloading(false);
             } catch (error) {
                 seterror(true);
