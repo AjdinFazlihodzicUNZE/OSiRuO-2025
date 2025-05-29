@@ -21,13 +21,17 @@ A web application for hotel booking.
 - Ajdin Fazlihodžić (Team Leader)
 - Džejlan Solić
 - Medin Ismić
+- Dino Matković
+
 ## 🚀 Installation & Running
 git clone <repository-link>
 cd HOTEL-BOOKING-APP
 Install dependencies
 npm install
+
 ### Start backend (in one terminal)
 nodemon server.js
+
 ### Start frontend (in another terminal)
 npm start
 
